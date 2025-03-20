@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SI Study Companion & Summarizer</title>
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { font-family: Arial, sans-serif; padding: 15px; text-align: center; width: 300px; }
+        h2 { color: #333; }
+        button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .pomodoro { background-color: #ff6961; color: white; }
+        .distract { background-color: #ffb347; color: white; }
+        .summarize { background-color: #77dd77; color: white; }
+        .quiz { background-color: #779ecb; color: white; }
+        .Study { background-color: #eea2dd; color: rgb(255, 255, 255); }
+        #displayText { font-size: 18px; margin-top: 15px; color: blue; }
+        #timerDisplay { font-size: 24px; font-weight: bold; margin-top: 10px; }
+        .timer-controls { display: flex; justify-content: space-between; }
+    </style>
+</head>
+<body>
+    <h2>Student Partner 🎓</h2>
+    <div id="timerDisplay">25:00</div>
+    <div class="timer-controls">
+        <button class="pomodoro" id="startTimer">Start</button>
+        <button class="pomodoro" id="pauseTimer">Pause</button>
+        <button class="pomodoro" id="resetTimer">Reset</button>
+    </div>
+    <button id="summarize">Summarize Notes</button>
+<div id="summary"></div>
+    <button class="quiz" id="quizBtn">Take a Quiz</button>
+    <button class="Study" id="studybtn">AI Mentor</button>
+    <div id="quizOutput"></div>
+    <p id="displayText"></p>
+</body>
+</html>

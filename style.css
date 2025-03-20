@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 300px;
+    text-align: center;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#quizOutput {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: left;
+}
+/* Messages */
+.message {
+    max-width: 75%;
+    padding: 10px 15px;
+    margin: 8px;
+    border-radius: 15px;
+    word-wrap: break-word;
+}
+
+/* User Message */
+.user-message {
+    background-color: #007bff;
+    color: white;
+    align-self: flex-end;
+    text-align: right;
+}
+
+/* Assistant Message */
+.assistant-message {
+    background-color: #e0e0e0;
+    color: black;
+    align-self: flex-start;
+}
+
+/* Chat Input Section */
+.chat-input {
+    display: flex;
+    padding: 10px;
+    background: white;
+    border-top: 1px solid #ccc;
+}
+
+/* Chat Input */
+.userInput {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #007bff;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+}
+
+/* Send Button */
+.sendButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.sendButton:hover {
+    background-color: #0056b3;
+}
+
+/* Clear Chat & Back Buttons */
+.control-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background: white;
+}
+
+.control-buttons button {
+    flex: 1;
+    padding: 8px;
+    margin: 5px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#clearChatBtn {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+#clearChatBtn:hover {
+    background-color: #cc0000;
+}
+
+#backBtn {
+    background-color: #28a745;
+    color: white;
+}
+
+#backBtn:hover {
+    background-color: #1e7e34;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    #chatContainer {
+        width: 95%;
+        height: 400px;
+    }
+}

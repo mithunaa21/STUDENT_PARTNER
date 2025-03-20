@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "AI Study Assistant",
+  "version": "1.0",
+  "description": "An AI-powered study assistant to generate content based on topics.",
+  "permissions": ["scripting", "activeTab", "storage"],
+"host_permissions": [
+    "<all_urls>"
+],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+  "default_icon": {
+    "16": "assets/ext-icon.png",
+    "48": "assets/play.png",
+    "128": "assets/save.png"
+  },
+  "default_popup": "index.html"
+},
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
